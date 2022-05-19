@@ -46,4 +46,57 @@ export default {
 </template>
 
 <style>
+#equal {
+  width: calc(200%);
+  padding: 10px 0;
+}
+#delete {
+  width: calc(200%);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#digit{
+  width: calc(100%);
+  padding: 10px;
+}
+#point {
+  width: calc(100%);
+  padding: 10px
+}
+#sum {
+  width: calc(100%);
+  padding: 10px
+}
+#minus {
+  width: calc(100%);
+  padding: 10px
+}
+#mul {
+  width: calc(100%);
+  padding: 10px
+}
+#clear {
+  width: calc(100%);
+  padding: 10px
+}
+#div {
+  width: calc(100%);
+  padding: 10px
+}
+#btn {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  left: 51%;
+  transform: translate(-50%);
+  width: calc(100% / 4 - 5px);
+}
+#display{
+  width: calc(23%);
+  position: relative;
+  text-align: center;
+  left: 1%;
+}
 </style>
