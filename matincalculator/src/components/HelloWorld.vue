@@ -10,93 +10,47 @@ export default {
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
-<table dir="rtl" id="btn">
-<tr><input dir="rtl" type="number" id="display"></tr>
-<tr>
- <td><button id="div">/</button></td>
- <td><button id="clear">C</button></td>
- <td><button id="delete">del</button></td>
-</tr>
-<tr>
- <td><button id="mul">*</button></td>
- <td><button id="digit">9</button></td>
- <td><button id="digit">8</button></td>
- <td><button id="digit">7</button></td>
-</tr>
-<tr>
- <td><button id="minus">-</button></td>
- <td><button id="digit">6</button></td>
- <td><button id="digit">5</button></td>
- <td><button id="digit">4</button></td>
-</tr>
-<tr>
- <td><button id="sum">+</button></td>
- <td><button id="digit">3</button></td>
- <td><button id="digit">2</button></td>
- <td><button id="digit">1</button></td>
-</tr>
-<tr>
- <td><button id="point">.</button></td>
- <td><button id="digit">0</button></td>
- <td><button id="equal">=</button></td>
-</tr>
-</table>
+  <div>
+    <table id="calculator" dir="rtl">
+      <tr>
+      
+        <td colspan="4">
+          <input v-model="screen" dir="ltr" id="display" type="number"/>
+        </td>
+      
+      </tr>
+      <tr>
+        <td><button @click="clear" id="clear">C</button></td>
+        <td><button @click="del" id="delete">del</button></td>
+        <td><button @click="point()" id="point" class="point">.</button></td>
+        <td><button @click="mod" id="mod">%</button></td>
+      </tr>
+      <tr>
+        <td><button @click="div" id="div">/</button></td>
+        <td><button @click="digit(9)" id="digit" class="digit">9</button></td>
+        <td><button @click="digit(8)" id="digit" class="digit">8</button></td>
+        <td><button @click="digit(7)" id="digit" class="digit">7</button></td>
+      </tr>
+      <tr>
+        <td><button @click="mul" id="mul">*</button></td>
+        <td><button @click="digit(6)" id="digit" class="digit">6</button></td>
+        <td><button @click="digit(5)" id="digit" class="digit">5</button></td>
+        <td><button @click="digit(4)" id="digit" class="digit">4</button></td>
+      </tr>
+      <tr>
+        <td><button @click="minus" id="minus">-</button></td>
+        <td><button @click="digit(3)" id="digit" class="digit">3</button></td>
+        <td><button @click="digit(2)" id="digit" class="digit">2</button></td>
+        <td><button @click="digit(1)" id="digit" class="digit">1</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button @click="equal" id="equal">=</button></td>
+        <td><button @click="digit(0)" id="digit" class="digit">0</button></td>
+        <td><button @click="sum" id="sum">+</button></td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <style>
-#equal {
-  width: calc(200%);
-  padding: 10px 0;
-}
-#delete {
-  width: calc(200%);
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-#digit{
-  width: calc(100%);
-  padding: 10px;
-}
-#point {
-  width: calc(100%);
-  padding: 10px
-}
-#sum {
-  width: calc(100%);
-  padding: 10px
-}
-#minus {
-  width: calc(100%);
-  padding: 10px
-}
-#mul {
-  width: calc(100%);
-  padding: 10px
-}
-#clear {
-  width: calc(100%);
-  padding: 10px
-}
-#div {
-  width: calc(100%);
-  padding: 10px
-}
-#btn {
-  margin: 0;
-  padding: 0;
-  border-radius: 10px;
-  position: relative;
-  text-align: center;
-  left: 51%;
-  transform: translate(-50%);
-  width: calc(100% / 4 - 5px);
-}
-#display{
-  width: calc(23%);
-  position: relative;
-  text-align: center;
-  left: 1%;
-}
 </style>
