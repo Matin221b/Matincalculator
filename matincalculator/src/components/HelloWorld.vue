@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div>
-    <table id="calculator" dir="rtl">
+    <table id="calculator" dir="rtl" border="1">
       <tr>
       
         <td colspan="4">
@@ -53,4 +53,74 @@ export default {
 </template>
 
 <style>
+#calculator {
+  text-align: center;
+  margin: auto
+}
+#display {
+padding: 5px;
+font-weight: bold;
+text-align: right
+}
+#equal {
+  background-color: rgb(89, 89, 210);
+  border: 1px solid rgb(89, 89, 210);
+  width: calc(100%);
+  padding: 10px 0;
+}
+#delete {
+  background-color: rgb(210, 140, 89);
+  border: 1px solid rgb(210, 140, 89);
+  width: calc(100%);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#digit{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  width: calc(100%);
+  padding: 10px;
+}
+#point {
+  background-color: rgb(201, 113, 255);
+  border: 1px solid rgb(201, 113, 255);
+  width: calc(100%);
+  padding: 10px
+}
+#sum {
+  background-color: rgb(210, 89, 200);
+  border: 1px solid rgb(210, 89, 200);
+  width: calc(100%);
+  padding: 10px
+}
+#minus {
+  background-color: rgb(89, 210, 89);
+  border: 1px solid rgb(89, 210, 89);
+  width: calc(100%);
+  padding: 10px
+}
+#mul {
+  background-color: rgb(200, 210, 89);
+  border: 1px solid rgb(200, 210, 89);
+  width: calc(100%);
+  padding: 10px
+}
+#clear {
+  background-color: rgb(210, 89, 89);
+  border: 1px solid rgb(210, 89, 89);
+  width: calc(100%);
+  padding: 10px
+}
+#div {
+  background-color: rgb(89, 210, 208);
+  border: 1px solid rgb(89, 210, 208);
+  width: calc(100%);
+  padding: 10px
+}
+#mod {
+  background-color: rgb(255, 209, 125);
+  border: 1px solid rgb(255, 209, 125);
+  width: calc(100%);
+  padding: 10px
+}
 </style>
