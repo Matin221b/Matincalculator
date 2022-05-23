@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <table id="calculator" dir="rtl" border="1">
+    <table id="calculator" dir="rtl">
       <tr>
       
         <td colspan="4">
@@ -55,56 +55,57 @@ text-align: right
 #equal {
   color: white;
   background-color: #2c3e50;
-  border: 1px solid #2c3e50;
+  border: 2px solid black;
   width: calc(100%);
   padding: 10px 0;
 }
 #digit{
-  color: white;
+  font: message-box;
+  color: black;
   background-color:rgb(82, 190, 128);
-  border: 1px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   width: calc(100%);
   padding: 10px;
 }
 #sum {
   color: white;
   background-color: #2c3e50;
-  border: 1px solid #2c3e50;
+  border: 2px solid black;
   width: calc(100%);
   padding: 10px
 }
 #minus {
   color: white;
   background-color: #2c3e50;
-  border: 1px solid #2c3e50;
+  border: 2px solid black;
   width: calc(100%);
   padding: 10px
 }
 #mul {
   color: white;
   background-color: #2c3e50;
-  border: 1px solid #2c3e50;
+  border: 2px solid black;
   width: calc(100%);
   padding: 10px
 }
 #clear {
   color: white;
   background-color: #2c3e50;
-  border: 1px solid #2c3e50;
+  border: 2px solid black;
   width: calc(100%);
   padding: 10px
 }
 #div {
   color: white;
   background-color: #2c3e50;
-  border: 1px solid #2c3e50;
+  border: 2px solid black;
   width: calc(100%);
   padding: 10px
 }
 #mod {
   color: white;
   background-color: #2c3e50;
-  border: 1px solid #2c3e50;
+  border: 2px solid black;
   width: calc(100%);
   padding: 10px
 }
