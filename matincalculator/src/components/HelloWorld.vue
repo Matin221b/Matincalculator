@@ -1,4 +1,74 @@
 <script>
+export default {
+  // ‌تعریف عملگر‌های ریاضی 
+   data() {
+    return {
+      screen: "",
+      value1: Number,
+      value2: Number,
+      Mt: "",
+    };
+  },
+  methods: {
+    digit(n) {
+      this.screen += n;
+    },
+    sum() {    //تعریف عملگر جمع
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "+";
+      this.screen = "";
+    },
+    mul() {    //تعریف عملگر ضرب
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "*";
+      this.screen = "";
+    },
+    minus() {   //تعریف عملگر تفریق
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "-";
+      this.screen = "";
+    },
+    mod() {    //تعریف عملگر درصد
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "%";
+      this.screen = "";
+    },
+    clear() {
+      this.screen = "";    //تعریف دکمه پاک کردن صفحه نمایش
+    },
+    div() {    //تعریف عملگر تقسیم
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "/";
+      this.screen = "";
+    },
+    equal() {    //تعریف عملگر مساوی
+      switch (this.Mt) {
+        case "+":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value2 + this.value1;
+          break;
+        case "-":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 - this.value2;
+          break;
+        case "*":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 * this.value2;
+          break;
+        case "%":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 % this.value2;
+          break;
+        case "/":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 / this.value2;
+          break;
+        default:
+          break;
+      }
+    },
+  }
+};
 </script>
 
 <template>
