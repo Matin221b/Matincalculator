@@ -53,50 +53,58 @@ font-weight: bold;
 text-align: right
 }
 #equal {
-  background-color: rgb(89, 89, 210);
-  border: 1px solid rgb(89, 89, 210);
+  color: white;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   width: calc(100%);
   padding: 10px 0;
 }
 #digit{
-  background-color: rgb(255, 255, 255);
+  color: white;
+  background-color:rgb(82, 190, 128);
   border: 1px solid rgb(0, 0, 0);
   width: calc(100%);
   padding: 10px;
 }
 #sum {
-  background-color: rgb(210, 89, 200);
-  border: 1px solid rgb(210, 89, 200);
+  color: white;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   width: calc(100%);
   padding: 10px
 }
 #minus {
-  background-color: rgb(89, 210, 89);
-  border: 1px solid rgb(89, 210, 89);
+  color: white;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   width: calc(100%);
   padding: 10px
 }
 #mul {
-  background-color: rgb(200, 210, 89);
-  border: 1px solid rgb(200, 210, 89);
+  color: white;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   width: calc(100%);
   padding: 10px
 }
 #clear {
-  background-color: rgb(210, 89, 89);
-  border: 1px solid rgb(210, 89, 89);
+  color: white;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   width: calc(100%);
   padding: 10px
 }
 #div {
-  background-color: rgb(89, 210, 208);
-  border: 1px solid rgb(89, 210, 208);
+  color: white;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   width: calc(100%);
   padding: 10px
 }
 #mod {
-  background-color: rgb(255, 209, 125);
-  border: 1px solid rgb(255, 209, 125);
+  color: white;
+  background-color: #2c3e50;
+  border: 1px solid #2c3e50;
   width: calc(100%);
   padding: 10px
 }
